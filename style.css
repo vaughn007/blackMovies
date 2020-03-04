@@ -1,0 +1,344 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+   margin: 0;
+   font-family: 'Montserrat', sans-serif;
+   background-color: #414141;
+   color: #ffffff;
+ }
+ 
+ 
+ p {
+   color: #dfdfdf;
+ }
+ 
+
+ 
+
+ div.desc {
+   padding:5px 10px 10px 0px;
+   text-align: left;
+ }
+ 
+ div.desc a {
+   color: white;
+   font-weight: bold;
+ } 
+
+
+ * {
+   box-sizing: border-box;
+ }
+ 
+ 
+ 
+ 
+ .row-image {
+   display: -ms-flexbox; /* IE10 */
+   display: flex;
+   -ms-flex-wrap: wrap; /* IE10 */
+   flex-wrap: wrap;
+   padding: 0 14px;
+ }
+ 
+ /* Create four equal columns that sits next to each other */
+ .column {
+   -ms-flex: 25%; /* IE10 */
+   flex: 25%;
+   max-width: 25%;
+   padding: 0 4px 20px;  /* top 0, left and right 4px, bottom padding 20px */
+ }
+ 
+ .column img {
+   margin-top: 8px;
+   vertical-align: middle;
+   width: 100%;
+   border-radius: 9px;
+   /* -webkit-filter: grayscale(100%);
+   filter: grayscale(100%); */
+ }
+
+ /* .column img:hover {
+   -webkit-filter: grayscale(0%); 
+   filter: grayscale(0%);
+ } */
+ 
+
+ .desc a:hover {
+   text-decoration: none;
+   color: #b3b3b3;
+ }
+ 
+ /* Responsive layout - makes a two column-layout instead of four columns */
+ @media screen and (max-width: 800px) {
+   .column {
+     -ms-flex: 50%;
+     flex: 50%;
+     max-width: 50%;
+   }
+ }
+ 
+ /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+ @media screen and (max-width: 600px) {
+   .column {
+     -ms-flex: 100%;
+     flex: 100%;
+     /* max-width: 100%; */
+     max-width: 50%;
+   }
+ }
+
+
+ 
+
+ .hr-strike {
+   display: block;
+   text-align: center;
+   overflow: hidden;
+   white-space: nowrap;
+   padding-top: 5px; 
+   padding-bottom: 5px;
+   margin-left: 19px;
+   margin-right: 19px;
+}
+
+.hr-strike > span {
+   position: relative;
+   display: inline-block;
+   
+}
+
+.hr-strike h2 {
+ font-family: 'Montserrat', sans-serif;
+ font-size: 20px;
+ font-weight: bold;
+ 
+}
+
+.hr-strike > span:before,
+.hr-strike > span:after {
+   content: "";
+   position: absolute;
+   top: 50%;
+   width: 9999px;
+   height: 1px;
+   background: rgb(255, 253, 253);
+}
+
+.hr-strike > span:before {
+   right: 100%;
+   margin-right: 15px;
+}
+
+.hr-strike > span:after {
+   left: 100%;
+   margin-left: 15px;
+}
+
+
+/* Responsive Videos */
+video {
+ max-width: 100%;
+ height: auto;
+ padding-top: 1px;
+ 
+}
+
+
+
+/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+@media screen and (max-width: 600px) {
+ h2 {
+   font-size: 17px;
+ }
+}
+
+@media screen and (max-width: 600px) {
+ .trailer-title h4 {
+   font-size: 14px;
+ }
+}
+
+
+@media screen and (max-width: 600px) {
+ .navbar a.navbar-brand.logoText {
+   font-size: 17px;
+ }
+}
+
+@media screen and (max-width: 600px) {
+ .hr-strike h2 {
+   font-size: 14px;
+ }
+}
+
+@media screen and (max-width: 600px) {
+ .fab.social-media {
+   font-size: 22px;
+   
+   }
+}
+
+
+footer {
+ background-color: #313131;       
+ font-size: 16px;
+ padding: 10px 0;
+ margin-top: 77px;
+ /* margin-top: -100px; */
+ text-align: center;
+ width: 100%; /*new*/
+ bottom: 0; /*new*/
+ 
+}
+
+.grid-container {
+ display: inline-grid;
+ grid-template-columns: auto auto auto;
+ background-color: black;
+}
+
+.grid-item {
+ background-color: #525252;
+ padding: 10px;
+ padding-right: 0px;
+ font-size: 30px;
+ text-align: center;
+}
+
+.grid-item-pic {
+ padding-left: 0px;
+ 
+}
+
+
+
+/* Bootstrap log */  
+.navbar a.navbar-brand {
+ font-size: 36px;
+ font-family: 'Montserrat', sans-serif;
+ font-weight: bold;
+ letter-spacing: 3px;
+ color: #dfdfdf;
+ 
+}
+
+/* nav bar */
+.navbar.navbar-inverse {
+ background-color:#0d0d0d; 
+ padding-top: 5px;
+ padding-bottom: 5px;
+ margin-bottom: 0px;
+ 
+}
+
+
+.navbar a {
+ font-weight: bold;
+ 
+
+}
+
+.navbar.navbar-inverse li a {
+ color: #dfdfdf;
+ 
+}
+
+.navbar.navbar-inverse li a:hover {
+ color: #fff;
+ 
+}
+
+
+
+
+
+
+
+.container-footer {
+ padding: 3% 15% 7%;
+}
+
+.social-media {
+ margin: 20px 10px;  /* 20px top and bottom and 10px left and right */
+ font-size: 30px;
+ color: #525252;
+ 
+ }
+
+ .social-media:hover {
+   color: rgb(165, 154, 154);
+}
+
+h1, h2, h3, h4 {
+ font-family: "Montserrat";
+ font-weight: bold;
+ font-size: 18px;
+
+
+}
+
+#wrapper {
+ min-height: 100%;
+ padding-left: 15px;
+ padding-right: 15px;
+}
+
+#main {
+ overflow: auto;
+ /* padding-bottom: 100px; size of footer */
+}
+
+.bold {
+ font-weight: bold;
+}
+
+
+@media screen and (max-width: 600px) {
+ .carousel-inner img{
+ 
+   max-height: 200px;
+ }
+}
+
+/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+@media only screen and (min-width: 480px) and (max-width: 767px){
+ .carousel-inner img{
+ 
+   max-height: 200px;
+ }
+}
+
+/* Tablet Portrait size to standard 960 (devices and browsers) */
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+ .carousel-inner img{
+ 
+   height: auto;
+ }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
